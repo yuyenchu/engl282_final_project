@@ -1,29 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+
+//routers
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Main from './components/Main'
+import studycase from './components/studycase'
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Welcome to ENGL 282 cyber sercurity group website!
-        </h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/study" component={studycase} />
+      </Switch>
+    </Router>
   );
+  // 
 }
 
 export default App;
