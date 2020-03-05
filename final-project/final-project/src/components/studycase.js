@@ -50,9 +50,9 @@ function Studycase() {
     <div id='holder1'>
       <header id='header1'>
         <h1>
-          Welcome to ENGL 282 cyber sercurity group studies!
+          Cyber Sercurity Studies
         </h1>
-        <AppBar position="static">
+        <AppBar position="static" classname="related-bar">
           <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
             <Tab label="Item One" {...a11yProps(0)} />
             <Tab label="Item Two" {...a11yProps(1)} />
@@ -69,6 +69,7 @@ function Studycase() {
           Item Three
         </TabPanel>
         <Button component={Link} to="/">Click here to go to main</Button>
+        <Button component={Link} to="/english">Click here to go to english</Button>
       </header>
     </div>
   );
