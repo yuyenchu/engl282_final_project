@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../logo.svg';
 import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom";
+import logo from '../logo.svg';
 
 function Main() {
   return (
