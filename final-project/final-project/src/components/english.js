@@ -1,14 +1,46 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Fade from '@material-ui/core/Fade';
 import Grid from '@material-ui/core/Grid';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import MetaTags from 'react-meta-tags';
 import { Link } from "react-router-dom";
 import img from "../placeholder.jpg"
 
 
 function English() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
-    <div className="wrapper">
+    <div className="App">
+      <div>
+        <Button component={Link} to="/">
+          Home
+        </Button>
+        <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
+          Pages
+        </Button>
+        <Menu
+          id="fade-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Fade}
+        >
+          <MenuItem component={Link} to="/english">English</MenuItem>
+          <MenuItem component={Link} to="/study">Study Cases</MenuItem>
+        </Menu>
+      </div>
       <MetaTags>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -19,7 +51,7 @@ function English() {
       </MetaTags>
 
 
-      <div className="content">
+      <body>
         <header>
           <h1>
             Our Website Name
@@ -87,7 +119,7 @@ function English() {
             Published by Publisher Name. Copyright 20XX.
           </p>
         </footer>
-      </div>
+      </body>
     </div>
   );
 }

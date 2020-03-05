@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import Fade from '@material-ui/core/Fade';
 import Grid from '@material-ui/core/Grid';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -15,6 +18,16 @@ function Studycase() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };  
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   function a11yProps(index) {
     return {
@@ -47,7 +60,26 @@ function Studycase() {
   };
   
   return (
-    <div id='holder1'>
+    <div className="App">
+      <div>
+        <Button component={Link} to="/">
+          Home
+        </Button>
+        <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
+          Pages
+        </Button>
+        <Menu
+          id="fade-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Fade}
+        >
+          <MenuItem component={Link} to="/english">English</MenuItem>
+          <MenuItem component={Link} to="/study">Study Cases</MenuItem>
+        </Menu>
+      </div>
       <header id='header1'>
         <h1>
           Cyber Sercurity Studies
