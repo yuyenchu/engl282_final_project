@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -68,8 +69,10 @@ function Studycase() {
         <TabPanel value={value} index={2}>
           Item Three
         </TabPanel>
-        <Button component={Link} to="/">Click here to go to main</Button>
-        <Button component={Link} to="/english">Click here to go to english</Button>
+        <Grid>
+          <Button component={Link} to="/">Click here to go to main</Button>
+          <Button component={Link} to="/english">Click here to go to english</Button>
+        </Grid>        
       </header>
     </div>
   );

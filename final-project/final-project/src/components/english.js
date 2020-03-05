@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import MetaTags from 'react-meta-tags';
 import { Link } from "react-router-dom";
 import img from "../placeholder.jpg"
@@ -77,7 +78,10 @@ function English() {
             </h3>
           </div>
         </div>
-        <Button component={Link} to="/">Click here to go to main</Button>
+        <Grid>
+          <Button component={Link} to="/">Click here to go to main</Button>
+          <Button component={Link} to="/study">Click here to go to studies</Button>
+        </Grid>
         <footer>
           <p>
             Published by Publisher Name. Copyright 20XX.
