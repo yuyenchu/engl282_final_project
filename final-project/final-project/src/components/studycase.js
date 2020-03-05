@@ -6,18 +6,11 @@ import Button from '@material-ui/core/Button';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
 
 function Studycase() {
-  const classes = useStyles()
   const [value, setValue] = useState(0)
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -57,9 +50,8 @@ function Studycase() {
     <div id='holder1'>
       <header id='header1'>
         <h1>
-          Welcome to ENGL 282 cyber sercurity group website!
+          Welcome to ENGL 282 cyber sercurity group studies!
         </h1>
-        <Button component={Link} to="/">Click here to go to main</Button>
         <AppBar position="static">
           <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
             <Tab label="Item One" {...a11yProps(0)} />
@@ -76,6 +68,7 @@ function Studycase() {
         <TabPanel value={value} index={2}>
           Item Three
         </TabPanel>
+        <Button component={Link} to="/">Click here to go to main</Button>
       </header>
     </div>
   );
