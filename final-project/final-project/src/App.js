@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './components/Main'
 import studycase from './components/studycase'
-import './App.css';
+
 
 
 function App() {
