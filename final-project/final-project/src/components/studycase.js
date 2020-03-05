@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-//import { makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 
 
@@ -67,7 +66,7 @@ function Studycase() {
           Item Two
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+            Item Three
         </TabPanel>
         <Grid>
           <Button component={Link} to="/">Click here to go to main</Button>
