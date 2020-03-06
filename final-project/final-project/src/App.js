@@ -3,8 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //pages
 import Main from './components/Main'
-import studycase from './components/studycase'
-import english from './components/english'
+import Studycase from './components/Studycase'
+import English from './components/English'
 //css
 import "./css/App.css";
 import "./css/english.css";
@@ -14,9 +14,10 @@ function App() {
   return (
     <Router>
       <Switch>
+        {/* create url for pages */}
         <Route exact path="/" component={Main} />
-        <Route exact path="/study" component={studycase} />
-        <Route exact path="/english" component={english} />
+        <Route exact path="/study" component={Studycase} />
+        <Route exact path="/english" component={English} />
       </Switch>
     </Router>
   );

@@ -53,9 +53,9 @@ function Studycase(props) {
         </h1>
         <AppBar position="static" classname="related-bar">
           <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-            <Tab label="Item One" {...a11yProps(0)} />
-            <Tab label="Item Two" {...a11yProps(1)} />
-            <Tab label="Item Three" {...a11yProps(2)} />
+            <Tab label="Case 1" {...a11yProps(0)} />
+            <Tab label="Case 2" {...a11yProps(1)} />
+            <Tab label="Case 3" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0}>
