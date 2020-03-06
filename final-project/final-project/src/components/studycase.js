@@ -10,17 +10,18 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 
 
-function Studycase() {
-  const [value, setValue] = useState(0)
+function Studycase(props) {
+  
+  const [value, setValue] = useState(props.location.state.id)
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };  
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
@@ -35,6 +36,8 @@ function Studycase() {
       'aria-controls': `simple-tabpanel-${index}`,
     };
   }
+
+  const history = useHistory();
 
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -65,8 +68,11 @@ function Studycase() {
         <Button component={Link} to="/">
           Home
         </Button>
+        <Button component={Link} to="/english">
+          English
+        </Button>
         <Button aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
-          Pages
+          Study Cases
         </Button>
         <Menu
           id="fade-menu"
@@ -76,9 +82,11 @@ function Studycase() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          <MenuItem component={Link} to="/english">English</MenuItem>
-          <MenuItem component={Link} to="/study">Study Cases</MenuItem>
+          <MenuItem onClick={() => {setValue(0);handleClose()}}>Case1</MenuItem>
+          <MenuItem onClick={() => {setValue(1);handleClose()}}>Case2</MenuItem>
+          <MenuItem onClick={() => {setValue(2);handleClose()}}>Case3</MenuItem>
         </Menu>
+        
       </div>
       <header id='header1'>
         <h1>
