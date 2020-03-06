@@ -69,8 +69,6 @@ function Main() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        
-        <Button component={Link} to="/study/">Click here to go to study</Button>
       
         <a
           className="App-link"

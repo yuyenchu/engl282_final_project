@@ -108,10 +108,6 @@ function Studycase(props) {
         <TabPanel value={value} index={2}>
             Item Three
         </TabPanel>
-        <Grid>
-          <Button component={Link} to="/">Click here to go to main</Button>
-          <Button component={Link} to="/english">Click here to go to english</Button>
-        </Grid>        
       </header>
     </div>
   );
