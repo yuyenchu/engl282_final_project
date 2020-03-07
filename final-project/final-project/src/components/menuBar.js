@@ -36,8 +36,8 @@ function MenuBar(func){
 
   return (
     <div align="left">
-      <Grid container alignItems="center">
-        <img src={img} alt="Logo" width="5%"/>
+      <Grid container alignItems="center" >
+        <img src={img} alt="Logo" height="45px" style={{margin:"5px 5px 5px"}}/>
         <Button classes={{root: buttonStyle.root}} component={Link} to="/">
           Home
         </Button>
