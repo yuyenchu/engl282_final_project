@@ -59,6 +59,9 @@ function MenuBar(func){
           <MenuItem onClick={() => {func(1);handleClose()}}>Case2</MenuItem>
           <MenuItem onClick={() => {func(2);handleClose()}}>Case3</MenuItem>
         </Menu>
+        <Button classes={{root: buttonStyle.root}} component={Link} to="/photo">
+          Photo
+        </Button>
       </Grid>
     </div>
   );

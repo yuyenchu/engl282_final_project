@@ -85,7 +85,7 @@ function Studycase(props) {
               ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada 
               metus, in volutpat tellus sem at justo.
           </p>
-          <div class="mid-article"style={{margin:"5px 5px 200px"}}>
+          <div class="mid-article" style={{margin:"5px 5px 200px"}}>
             <img src={img} alt="img"/>
             <p class="image-caption">
               Caption for this image.
@@ -231,9 +231,9 @@ function Studycase(props) {
         </TabPanel>
       </div>
       <footer>
-          <p>
-            Published by Publisher Name. Copyright 20XX.
-          </p>
+        <p>
+          Published by Publisher Name. Copyright 20XX.
+        </p>
       </footer>
     </div>
   );

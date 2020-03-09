@@ -18,9 +18,6 @@ function Main() {
           Welcome to ENGL 282 cyber sercurity group website!
         </h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
       
         <a
           className="App-link"
@@ -31,6 +28,12 @@ function Main() {
           Learn React
         </a>
       </header>
+      
+      <footer>
+        <p>
+          Published by Publisher Name. Copyright 20XX.
+        </p>
+      </footer>
     </div>
   );
 }

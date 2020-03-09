@@ -48,7 +48,7 @@ function English(props) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum. Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.
           </p>
 
-          <div class="mid-article">
+          <div class="mid-article" style={{margin:"18px 18px 200px"}}>
             <img src={img} alt="img"/>
             <p class="image-caption">
               Caption for this image.
@@ -60,7 +60,7 @@ function English(props) {
           </p>
 
           <p>
-            Nunc ullamcorper neque nunc, vitae sollicitudin nunc placerat nec. Suspendisse vel enim ultrices, fringilla urna luctus, lacinia est. Quisque mattis dictum sapien vitae laoreet. Suspendisse ultricies, <a href="">lorem</a> id tempor elementum, turpis magna pharetra purus, ac pulvinar metus ante quis nisi. Praesent dui massa, egestas dictum mi ut, tempus consequat neque. Maecenas urna tellus, fermentum at velit ac, commodo ultricies orci. Morbi augue dui, tincidunt et purus quis, consequat dictum enim.
+            Nunc ullamcorper neque nunc, vitae sollicitudin nunc placerat nec. Suspendisse vel enim ultrices, fringilla urna luctus, lacinia est. Quisque mattis dictum sapien vitae laoreet. Suspendisse ultricies, <a href="https://www.google.com">lorem</a> id tempor elementum, turpis magna pharetra purus, ac pulvinar metus ante quis nisi. Praesent dui massa, egestas dictum mi ut, tempus consequat neque. Maecenas urna tellus, fermentum at velit ac, commodo ultricies orci. Morbi augue dui, tincidunt et purus quis, consequat dictum enim.
           </p>
         </div>
 
@@ -68,19 +68,19 @@ function English(props) {
           <div class="related-article">
             <img class="article-image" src={img} alt="img"/>
             <h3>
-              <a class="related-title">Quiz: What Kind Of AI Apocalypse Are You?</a>
+              <a href="https://www.google.com" class="related-title">Quiz: What Kind Of AI Apocalypse Are You?</a>
             </h3>
           </div>
           <div class="related-article">
             <img class="article-image" src={img} alt="img"/>
             <h3>
-              <a class="related-title">Why I Injected Myself With Pure Silicon</a>
+              <a href="https://www.google.com" class="related-title">Why I Injected Myself With Pure Silicon</a>
             </h3>
           </div>
           <div class="related-article">
             <img class="article-image" src={img} alt="img"/>
             <h3>
-              <a class="related-title">Roko's Basilisk: You Don't Want To See This</a>
+              <a href="https://www.google.com" class="related-title">Roko's Basilisk: You Don't Want To See This</a>
             </h3>
           </div>
         </div>
