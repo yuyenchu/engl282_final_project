@@ -41,8 +41,8 @@ function MenuBar(func){
         <Button classes={{root: buttonStyle.root}} component={Link} to="/">
           Home
         </Button>
-        <Button classes={{root: buttonStyle.root}} component={Link} to="/english">
-          English
+        <Button classes={{root: buttonStyle.root}} component={Link} to="/poets">
+          Poets
         </Button>
         <Button classes={{root: buttonStyle.root}} href="javascript:;" aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick}>
           Study Cases
@@ -60,7 +60,10 @@ function MenuBar(func){
           <MenuItem onClick={() => {func(2);handleClose()}}>Case3</MenuItem>
         </Menu>
         <Button classes={{root: buttonStyle.root}} component={Link} to="/photo">
-          Photo
+          Photo Gallery
+        </Button>
+        <Button classes={{root: buttonStyle.root}} component={Link} to="/citation">
+          Citation
         </Button>
       </Grid>
     </div>
